@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public --no-clear",
+    "start": "sirv docs --no-clear",
     "deploy": "npx gh-pages -d dist"
   },
   "devDependencies": {
