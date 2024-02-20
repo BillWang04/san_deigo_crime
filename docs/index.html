@@ -6,12 +6,16 @@
 
 	<link rel='stylesheet' href='/san_diego_crime/docs/style.css'>
 	<link href="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css" rel="stylesheet">
+	<script defer src='/san_diego_crime/docs/build/bundle.js'></script>
 	<script src="https://d3js.org/d3.v6.js" charset="utf-8"></script>
 	<script src="https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js"></script>
-	<script defer src='/san_diego_crime/docs/build/bundle.js'></script>
+	%sveltekit.head%
+
 </head>
 
-<body>
-	<div id = "map"></div>
-</body>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+		<div id = "map"></div>
+	</body>
+	
 </html>
