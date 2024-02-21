@@ -37,7 +37,8 @@ export default {
 		format: 'iife',
 		name: 'app',
 		file: 'docs/build/bundle.js',
-		base: '/san_diego_crime/docs/'
+		base: '/san_diego_crime/docs/',
+		dir: 'docs'
 	},
 	plugins: [
 		svelte({
