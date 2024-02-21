@@ -38,8 +38,11 @@ export default {
 		name: 'app',
 		file: 'docs/build/bundle.js',
 		base: '/san_diego_crime/',
-		// dir: 'docs'
+		dir: 'docs'
 	},
+	paths: {
+		app: '/san_diego_crime/docs/build/bundle.js',
+	  },
 	plugins: [
 		svelte({
 			compilerOptions: {
